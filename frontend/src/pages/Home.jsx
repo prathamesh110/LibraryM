@@ -39,13 +39,13 @@ const Home = () => {
                         <div className='flex justify-center mx-3'>
                           <h2 className='text-xl'>“Library - from the Latin liber, meaning "book." In Greek and the Romance languages, the corresponding term is bibliotheca. A collection or group of collections of books and/or other print or nonprint materials organized and maintained for use</h2>
                         </div>
-                        <div className='flex items-start mx-3 my-2'>
+                        {/* <div className='flex items-start mx-3 my-2'>
                           <Link to='/Catalogue'>
                             <div className='bg-[#9D8189] rounded-lg'>
                               <h2 className='text-white text-2xl mx-4 '>Explore Catalogue</h2>
                             </div>
                           </Link>
-                        </div>
+                        </div> */}
                       </div>
                    </div>
                    <div className='hidden md:flex justify-center items-center '>
