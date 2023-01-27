@@ -5,6 +5,53 @@ import topbg from "../assets/top-deco.png";
 // import bottombg from "../assets/bottom-deco.png";
 import Shelf from "../components/Shelf";
 import Header from "../components/Header";
+import book1 from "../assets/book1.png";
+import book2 from "../assets/book2.png";
+import book3 from "../assets/book3.png";
+import book4 from "../assets/Book4.png";
+import book5 from "../assets/Book5.png";
+
+const data = [
+  {
+    id: 1,
+    title: "Unseen World",
+    pages: "501",
+    image: book1
+  },
+  {
+    id: 2,
+    title: "Book To Space",
+    pages: "200",
+    image: book2
+  }
+]
+
+const data2 = [
+  {
+    id: 3,
+    title: "Enemy",
+    pages: "300",
+    image: book3
+  },
+  
+]
+
+const data3 = [
+  {
+    id: 4,
+    title: "Sensitive",
+    pages: "250",
+    image: book4
+  },
+  {
+    id: 5,
+    title: "The Atlas",
+    pages: "200",
+    image: book5
+  },
+  
+]
+
 
 const MyShelf = () => {
   return (
@@ -37,9 +84,9 @@ const MyShelf = () => {
               </div>
               <div className="h-4/6 p-8">
                 <div className="grid grid-row-3 m-4">
-                  <Shelf name={"Completed"} />
-                  <Shelf name={"On Process"}/>
-                  <Shelf name={"Yet To Start"}/>
+                  <Shelf name={"Completed"}  datas={data} />
+                  <Shelf name={"On Process"} datas={data2} />
+                  <Shelf name={"Yet To Start"}  datas={data3} />
                   
                   
                 </div>
